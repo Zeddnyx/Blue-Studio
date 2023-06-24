@@ -34,15 +34,13 @@ export default function Homepage() {
         initial={{ x: 800 }}
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
-      >
-        <div className="shadow-box">
-          <Image
-            src={showcase[0].image}
-            width={400}
-            height={420}
-            alt="main image"
-          />
-        </div>
+        className="shadow-box">
+        <Image
+          src={showcase[0].image}
+          width={300}
+          height={320}
+          alt="main image"
+        />
       </m.div>
     </m.section>
   );

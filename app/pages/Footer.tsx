@@ -8,11 +8,11 @@ export default function Footer() {
   return (
     <footer>
       <div className="w-full">
-        <div className="flex flex-col w-full gap-5 w-full">
+        <div className="flex flex-col w-full gap-5 ">
           <div>
             <Image src={Logo} width={50} height={50} alt="logo" />
           </div>
-          <p className="w-96 text-bright0">
+          <p className="w-full text-bright0">
             Discover a world of artistic wonders at Blue Studio, where we breathe
             life into illustrations and animations
           </p>
@@ -42,7 +42,7 @@ export default function Footer() {
       <div className="w-full">
         <div className="w-full lg:w-80 flex lg:justify-between">
           <div className="hidden xl:flex"></div>
-          <button className="w-[250px] flex justify-around">
+          <button>
             <a className="w-[250px] flex justify-around" href="https://www.patreon.com/user?u=95613130">
               <p>Support Me on Patreon</p>
               <Image src={Patreon} width={30} height={30} alt="patreon" />

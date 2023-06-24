@@ -4,16 +4,16 @@
 
 @layer base {
   nav {
-    @apply h-[85px] py-3 px-20 lg:px-36 fixed  w-full bg-bright0 top-0 left-0 backdrop-filter backdrop-blur-sm bg-opacity-80 flex items-center justify-center z-50;
+    @apply h-[85px] py-3 px-10 xl:px-36 fixed  w-full bg-bright0 top-0 left-0 backdrop-filter backdrop-blur-sm bg-opacity-80 flex items-center justify-center z-50;
   }
   footer {
-    @apply px-20 py-5 bg-dark0 flex flex-col lg:flex-row items-center gap-10 justify-between h-full w-full lg:h-[300px]
+    @apply px-10 py-5 bg-dark0 flex flex-col lg:flex-row items-center gap-10 justify-between h-full w-full lg:h-[300px]
   }
   button {
     @apply outline-none bg-mainPurple text-bright0 flex items-center p-3;
   }
   section {
-    @apply xl:p-10 px-20 lg:px-40 py-40 p-3 h-full;
+    @apply xl:p-10 px-10 lg:px-40 py-40 p-3 h-full;
   }
   h6 {
     @apply font-medium text-bright0;
@@ -52,10 +52,10 @@
 
 /* Homepage */
 .homepage {
-  @apply px-20 lg:px-40 mt-14 md:mt-48 flex flex-col md:flex-row items-center justify-center md:justify-between gap-20 md:gap-10;
+  @apply px-10 lg:px-40 mt-14 md:mt-48 flex flex-col md:flex-row items-center justify-center md:justify-between gap-20 md:gap-10 w-full
 }
 .text-homepage {
-  @apply w-[486px] lg:w-[700px] px-12
+  @apply w-full lg:w-[700px]
 }
 .greetings {
   @apply my-5 text-dark0;
@@ -66,7 +66,7 @@
 
 /* showcase */
 .showcase {
-  @apply flex flex-col gap-5 bg-dark0 text-bright0 px-20 lg:px-40 py-20;
+  @apply flex flex-col gap-5 bg-dark0 text-bright0 px-10 lg:px-40 py-20;
 }
 
 .main-showcase {
@@ -81,12 +81,12 @@
 
 /* About */
 .about {
-  @apply px-20 lg:px-40 flex flex-col md:flex-row items-center gap-28 py-20;
+  @apply px-10 lg:px-40 flex flex-col md:flex-row items-center gap-28 py-20;
 }
 
 /* Contact */
 .contact {
-  @apply text-bright0 flex flex-col md:flex-row items-center px-20 lg:px-40 py-20 bg-mainPurple justify-center gap-20 text-bright0;
+  @apply text-bright0 flex flex-col md:flex-row items-center px-10 lg:px-40 py-20 bg-mainPurple justify-center gap-20 text-bright0;
 }
 .btn-black {
   @apply w-40 px-36 py-4 flex bg-dark0 text-center justify-center;
@@ -94,5 +94,5 @@
 
 /* css vanila */
 .shadow-box {
-  box-shadow: 20px 4px 20px 20px #999;
+  box-shadow: 15px 4px 20px 20px #999;
 }

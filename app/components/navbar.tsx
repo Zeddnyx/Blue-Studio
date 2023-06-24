@@ -18,7 +18,7 @@ export default function Navbar() {
     >
       <div className="z-50">
         <a href="#home">
-          <Image src={Logo} width={70} height={70} alt="logo" />
+          <Image src={Logo} width={50} height={50} alt="logo" />
         </a>
       </div>
       <ul className="ul-desktop">
@@ -46,9 +46,9 @@ export default function Navbar() {
             <a href={`#${item.link}`}>{item.title}</a>
           </li>
         ))}
-      <button className="flex">
-        <a href={DIRECT_WA}>Contact Us</a>
-      </button>
+        <button className="bg-bright0 w-40 self-end text-dark0 flex justify-center">
+          <a href={DIRECT_WA}>Contact Us</a>
+        </button>
       </ul>
       <button className="hidden md:flex">
         <a href={DIRECT_WA}>Contact Us</a>
