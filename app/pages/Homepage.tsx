@@ -1,5 +1,7 @@
 import React from "react";
 import { motion as m } from "framer-motion";
+import { showcase } from "@/app/utils/data";
+import Image from "next/image";
 
 export default function Homepage() {
   return (
@@ -22,7 +24,14 @@ export default function Homepage() {
         <button className="btn-homepage">Get Inquiries</button>
       </div>
       <div>
-        <div className="bg-mainPurple h-[587px] w-[441px] shadow-box"></div>
+        <div className="shadow-box">
+          <Image
+            src={showcase[0].image}
+            width={400}
+            height={420}
+            alt="main image"
+          />
+        </div>
       </div>
     </m.section>
   );

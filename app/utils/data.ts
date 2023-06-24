@@ -1,3 +1,6 @@
+import MainImg from "@/public/mainImage.png"
+import SecondImg from "@/public/secondImage.png"
+
 interface DataTypes<T> {
   title: T;
   child: T;
@@ -26,3 +29,18 @@ export const navbar: DataTypes<string>[] = [
     link: "about-us"
   },
 ];
+
+export const showcase: any[] = [
+  {
+    image: MainImg,
+    alt: "main image"
+  },
+  {
+    image: SecondImg,
+    alt: "secondImage"
+  },
+  {
+    image: MainImg,
+    alt: "main image"
+  }
+]

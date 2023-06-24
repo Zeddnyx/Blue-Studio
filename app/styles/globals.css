@@ -4,10 +4,10 @@
 
 @layer base {
   nav {
-    @apply h-[85px] py-3 px-20 lg:px-40 fixed  w-full bg-bright0 top-0 left-0 backdrop-filter backdrop-blur-sm bg-opacity-80 flex items-center justify-center z-50;
+    @apply h-[85px] py-3 px-20 lg:px-36 fixed  w-full bg-bright0 top-0 left-0 backdrop-filter backdrop-blur-sm bg-opacity-80 flex items-center justify-center z-50;
   }
   footer {
-    @apply px-20 lg:px-40 py-5 bg-dark0 flex flex-col lg:flex-row items-start lg:items-center gap-20 h-80 justify-between h-full w-full;
+    @apply px-20 py-5 bg-dark0 flex flex-col lg:flex-row items-center gap-10 justify-between h-full w-full lg:h-[300px]
   }
   button {
     @apply outline-none bg-mainPurple text-bright0 flex items-center p-3;
@@ -22,10 +22,10 @@
     @apply font-bold text-dark0;
   }
   h3 {
-    @apply font-bold text-[36px];
+    @apply font-bold text-[25px] md:text-[36px];
   }
   h1 {
-    @apply text-[52px] font-extrabold;
+    @apply text-[30px] md:text-[52px] font-extrabold;
   }
   p {
     @apply text-[16px];
@@ -52,10 +52,10 @@
 
 /* Homepage */
 .homepage {
-  @apply px-20 lg:px-40 mt-14 md:mt-48 flex flex-col md:flex-row justify-center md:justify-between gap-20 md:gap-10;
+  @apply px-20 lg:px-40 mt-14 md:mt-48 flex flex-col md:flex-row items-center justify-center md:justify-between gap-20 md:gap-10;
 }
 .text-homepage {
-  @apply w-[486px];
+  @apply w-[486px] lg:w-[700px];
 }
 .greetings {
   @apply my-5 text-dark0;
@@ -74,6 +74,9 @@
 }
 .card-showcase {
   @apply w-[280px] h-[390px] md:w-[382px] md:h-[498px] bg-mainPurple;
+}
+.card-hover {
+  @apply h-full w-full hover:object-cover hover:object-center hover:overflow-hidden transition-all duration-300 ease-in-out
 }
 
 /* About */

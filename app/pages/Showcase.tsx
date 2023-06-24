@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Start from "@/public/Burst-star.svg";
 import { motion as m } from "framer-motion";
+import { showcase } from "@/app/utils/data";
 
 export default function Showcase() {
   return (
@@ -22,9 +23,9 @@ export default function Showcase() {
         </div>
       </div>
       <div className="main-showcase">
-        <div className="card-showcase"></div>
-        <div className="card-showcase"></div>
-        <div className="card-showcase"></div>
+        {showcase.map((item, id) => <div key={id}>
+          <Image className="card-hover" src={item.image} width={400} height={400} alt={item.alt} />
+        </div>)}
       </div>
     </m.section>
   );
