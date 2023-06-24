@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  nav {
+    @apply h-[85px] p-3 px-20 md:px-40 fixed  w-full bg-bright0 top-0 left-0 backdrop-filter backdrop-blur-sm bg-opacity-80 flex items-center justify-center z-50
+  }
+  footer {
+    @apply px-20 lg:px-40 py-5 bg-dark0 flex items-center gap-20 h-80 justify-between
+  }
+  button {
+    @apply outline-none bg-mainPurple text-bright0 flex items-center p-3
+  }
+  section {
+    @apply xl:p-10 px-20 lg:px-40 py-40 p-3 h-full
+  }
+  h6 {
+    @apply font-medium text-bright0
+  }
+  h4 {
+    @apply font-bold text-dark0
+  }
+  h3 {
+    @apply font-bold text-[36px]
+  }
+  h1 {
+    @apply text-[52px] font-extrabold
+  }
+  p {
+    @apply text-[16px]
+  }
+}
+
+
+.parent-nav {
+  @apply flex justify-between items-center
+}
+
+.ul-desktop {
+  @apply hidden md:flex md:justify-between gap-16
+}
+
+/* Homepage */
+.text-homepage {
+  @apply w-[486px]
+}
+.greetings {
+  @apply my-5 text-dark0
+}
+.btn-homepage {
+  @apply p-4 px-16 text-bright0
+}
+
+/* showcase */
+.showcase {
+  @apply flex flex-col gap-5 bg-dark0 text-bright0 px-20 lg:px-40 py-20
+}
+
+.main-showcase {
+  @apply flex justify-between
+}
+.card-showcase{
+@apply w-[382px] h-[498px] bg-mainPurple
+}
+
+/* About */
+.about {
+  @apply px-20 lg:px-40 flex items-center gap-28 py-20
+}
+
+/* Contact */
+.contact {
+@apply text-bright0 flex items-center px-20 lg:px-40 py-20 bg-mainPurple justify-center gap-20 text-bright0
+}
+.btn-black {
+  @apply w-40 px-36 py-4 flex bg-dark0 text-center justify-center
+}
+
+/* css vanila */
+.shadow-box {
+  box-shadow: 20px 4px 20px 20px #999;
+}
