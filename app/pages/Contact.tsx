@@ -3,8 +3,7 @@ import Star from "@/public/Burst-star.svg";
 import Image from "next/image";
 import { motion as m } from "framer-motion";
 
-const NO_WA = 60126581215;
-const DIRECT_WA = `https://api.whatsapp.com/send?phone=${NO_WA}&text=Hi,&type=phone_number&app_absent=0`;
+const DIRECT_WA = `https://wa.me/+60126582515`;
 export default function Contact() {
   return (
     <m.section

@@ -10,10 +10,20 @@ export default function About() {
       viewport={{ once: false, amount: 0.5 }}
       id="about-us"
       className="about">
-      <div>
+      <m.div
+        initial={{ y: -1000 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false, amount: 0.5 }}
+      >
         <h1>Unlocking the Power of Artistic Expression</h1>
-      </div>
-      <div>
+      </m.div>
+      <m.div
+        initial={{ y: 1000 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false, amount: 0.5 }}
+      >
         <p>
           At Blue Studio, we believe in the power of artistic expression to
           evoke emotions, inspire change, and tell compelling stories. Our team
@@ -21,7 +31,7 @@ export default function About() {
           for their craft, constantly pushing the boundaries of creativity to
           deliver exceptional results.
         </p>
-      </div>
+      </m.div>
     </m.section>
   );
 }

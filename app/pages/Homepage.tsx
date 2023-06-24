@@ -13,7 +13,12 @@ export default function Homepage() {
       id="home"
       className="homepage"
     >
-      <div className="text-homepage">
+      <m.div
+        initial={{ x: -1000 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1 }}
+        className="text-homepage"
+      >
         <h4>Welcome to Blue Studio</h4>
         <h1>Unleashing the magic of illustration and animation</h1>
         <p className="greetings">
@@ -21,9 +26,15 @@ export default function Homepage() {
           and memorable experiences. With our expertise, we bring your
           imagination to life, immersing you in captivating worlds.
         </p>
-        <button className="btn-homepage">Get Inquiries</button>
-      </div>
-      <div>
+        <button className="btn-homepage">
+          <a href="mailto:bluestudio.hq@gmail.com">Get Inquiries</a>
+        </button>
+      </m.div>
+      <m.div
+        initial={{ x: 800 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1 }}
+      >
         <div className="shadow-box">
           <Image
             src={showcase[0].image}
@@ -32,7 +43,7 @@ export default function Homepage() {
             alt="main image"
           />
         </div>
-      </div>
+      </m.div>
     </m.section>
   );
 }

@@ -55,7 +55,7 @@
   @apply px-20 lg:px-40 mt-14 md:mt-48 flex flex-col md:flex-row items-center justify-center md:justify-between gap-20 md:gap-10;
 }
 .text-homepage {
-  @apply w-[486px] lg:w-[700px];
+  @apply w-[486px] lg:w-[700px] px-12
 }
 .greetings {
   @apply my-5 text-dark0;

@@ -4,8 +4,7 @@ import Logo from "@/public/logo-dark.svg";
 import { motion as m } from "framer-motion";
 import { useState } from "react";
 
-const NO_WA = 60126581215;
-const DIRECT_WA = `https://api.whatsapp.com/send?phone=${NO_WA}&text=Hi,&type=phone_number&app_absent=0`;
+const DIRECT_WA = `https://wa.me/+60126582515`;
 
 export default function Navbar() {
   const [menu, setMenu] = useState<boolean>(false);
@@ -47,6 +46,9 @@ export default function Navbar() {
             <a href={`#${item.link}`}>{item.title}</a>
           </li>
         ))}
+      <button className="flex">
+        <a href={DIRECT_WA}>Contact Us</a>
+      </button>
       </ul>
       <button className="hidden md:flex">
         <a href={DIRECT_WA}>Contact Us</a>

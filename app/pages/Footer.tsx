@@ -43,8 +43,10 @@ export default function Footer() {
         <div className="w-full lg:w-80 flex lg:justify-between">
           <div className="hidden xl:flex"></div>
           <button className="w-[250px] flex justify-around">
-            <p>Support Me on Patreon</p>
-            <Image src={Patreon} width={40} height={40} alt="patreon" />
+            <a className="w-[250px] flex justify-around" href="https://www.patreon.com/user?u=95613130">
+              <p>Support Me on Patreon</p>
+              <Image src={Patreon} width={30} height={30} alt="patreon" />
+            </a>
           </button>
         </div>
       </div>

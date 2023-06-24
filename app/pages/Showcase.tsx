@@ -12,7 +12,8 @@ export default function Showcase() {
       transition={{ duration: 2 }}
       viewport={{ once: false, amount: 0.5 }}
       id="portofolio"
-      className="showcase">
+      className="showcase"
+    >
       <div className="flex justify-between">
         <div className="w-[496px]">
           <h3>A Showcase of Our Illustration and Animation Masterpieces</h3>
@@ -22,11 +23,25 @@ export default function Showcase() {
           <Image src={Start} height={50} width={50} alt="start" />
         </div>
       </div>
-      <div className="main-showcase">
-        {showcase.map((item, id) => <div key={id}>
-          <Image className="card-hover" src={item.image} width={400} height={400} alt={item.alt} />
-        </div>)}
-      </div>
+      <m.div
+        initial={{ y: 1000 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false, amount: 0.5 }}
+        className="main-showcase"
+      >
+        {showcase.map((item, id) => (
+          <div key={id}>
+            <Image
+              className="card-hover"
+              src={item.image}
+              width={400}
+              height={400}
+              alt={item.alt}
+            />
+          </div>
+        ))}
+      </m.div>
     </m.section>
   );
 }
