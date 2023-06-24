@@ -9,7 +9,7 @@ export default function Homepage() {
       transition={{ duration: 2 }}
       viewport={{ once: false, amount: 0.5 }}
       id="home"
-      className="flex px-40 mt-60 justify-between"
+      className="homepage"
     >
       <div className="text-homepage">
         <h4>Welcome to Blue Studio</h4>
