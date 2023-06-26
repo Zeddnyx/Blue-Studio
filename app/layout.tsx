@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Blue Studio",
   description: "Unleashing the magic of illustration and animation",
   icons: {
-    icon: "../public/favicon-16x16.png"
+    icon: "/favicon.ico",
   }
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" href="../public/favicon-16x16.png"/>
+        <link rel="icon" href="/favicon.ico"/>
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
