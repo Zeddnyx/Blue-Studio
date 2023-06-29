@@ -7,7 +7,7 @@ import { navbar } from "@/app/utils/data";
 export default function Footer() {
   return (
     <footer>
-      <div className="w-full md:place-self-center xl:pr-20">
+      <div className="w-full md:place-self-center">
         <div className="flex flex-col w-full gap-5 ">
           <div>
             <Image src={Logo} width={50} height={50} alt="logo" />
@@ -37,7 +37,7 @@ export default function Footer() {
           </ul>
           <p className="text-gray-500 lg:text-center">
             <a href="https://deborahtech.xyz">
-              Blue Studio 2023. All rights reserved. Made by www.deborahtech.xyz
+              Blue Studio ©2023. All rights reserved. Made by www.deborahtech.xyz
             </a>
           </p>
         </div>

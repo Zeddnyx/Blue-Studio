@@ -7,7 +7,7 @@
     @apply h-[60px] md:h-[85px] py-3 px-10 xl:px-36 fixed  w-full bg-bright0 top-0 left-0 backdrop-filter backdrop-blur-sm bg-opacity-80 flex items-center justify-center z-50;
   }
   footer {
-    @apply px-10 py-5 bg-dark0 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 md:gap-3 /* flex flex-col lg:flex-row items-center gap-10 justify-between */ h-full w-full lg:h-[300px]
+    @apply px-10 py-5 bg-dark0 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 md:gap-3 lg:gap-x-10 h-full w-full lg:h-[300px]
   }
   button {
     @apply outline-none bg-mainPurple text-bright0 flex items-center p-3;
