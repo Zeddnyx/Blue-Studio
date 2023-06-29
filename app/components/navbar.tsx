@@ -6,6 +6,14 @@ import { useState } from "react";
 
 const DIRECT_WA = `https://wa.me/+60126582515`;
 
+const Hamburger = () => {
+  return <div className="grid gap-2">
+    <div className="h-1 w-8 bg-dark0 rounded-md"></div>
+    <div className="h-1 w-8 bg-dark0 rounded-md"></div>
+    <div className="h-1 w-8 bg-dark0 rounded-md"></div>
+  </div>
+}
+
 export default function Navbar() {
   const [menu, setMenu] = useState<boolean>(false);
   const handleMenu = () => void setMenu(!menu);
@@ -30,12 +38,12 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-      <div
+      <button
         className={menu ? "text-bright0 menu" : "text-dark0 menu"}
         onClick={handleMenu}
       >
-        {menu ? "Close" : "Menu"}
-      </div>
+        {menu ? "Close" : <Hamburger />}
+      </button>
 
       <ul
         onClick={handleMenu}

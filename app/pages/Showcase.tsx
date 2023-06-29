@@ -3,6 +3,7 @@ import Image from "next/image";
 import Start from "@/public/Burst-star.svg";
 import { motion as m } from "framer-motion";
 import { showcase } from "@/app/utils/data";
+import Slider from "@/app/hooks/Slider";
 
 export default function Showcase() {
   return (
@@ -18,7 +19,7 @@ export default function Showcase() {
         <div className="w-[496px]">
           <h3>A Showcase of Our Illustration and Animation Masterpieces</h3>
         </div>
-        <div>
+        <div className="hidden md:block">
           <Image src={Start} height={100} width={100} alt="start" />
           <Image src={Start} height={50} width={50} alt="start" />
         </div>
@@ -28,19 +29,23 @@ export default function Showcase() {
         animate={{ y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false, amount: 0.5 }}
-        className="main-showcase"
       >
-        {showcase.map((item, id) => (
-          <div key={id}>
-            <Image
-              className="card-hover"
-              src={item.image}
-              width={400}
-              height={400}
-              alt={item.alt}
-            />
-          </div>
-        ))}
+        <div className="main-showcase">
+          {showcase.map((item, id) => (
+            <div key={id}>
+              <Image
+                className="card-hover"
+                src={item.image}
+                width={400}
+                height={400}
+                alt={item.alt}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="md:hidden">
+          <Slider slides={showcase} />
+        </div>
       </m.div>
     </m.section>
   );

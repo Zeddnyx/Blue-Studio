@@ -2,6 +2,7 @@ import React from "react";
 import { motion as m } from "framer-motion";
 import { showcase } from "@/app/utils/data";
 import Image from "next/image";
+import MainImage from "@/public/mainImage.png";
 
 export default function Homepage() {
   return (
@@ -34,10 +35,19 @@ export default function Homepage() {
         initial={{ x: 800 }}
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
-        className="shadow-box">
+        className="md:shadow-box"
+      >
         <Image
-          src={showcase[0].image}
-          width={300}
+          className="md:hidden"
+          src={MainImage}
+          width={500}
+          height={320}
+          alt="main image"
+        />
+        <Image
+          className="hidden md:block"
+          src={MainImage}
+          width={350}
           height={320}
           alt="main image"
         />

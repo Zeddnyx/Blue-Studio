@@ -13,7 +13,7 @@ export default function Contact() {
       viewport={{ once: false, amount: 0.5 }}
       id="service"
       className="contact">
-      <div>
+      <div className="hidden md:block">
         <Image src={Star} width={100} height={100} alt="star" />
         <Image src={Star} width={50} height={50} alt="star" />
       </div>
@@ -27,7 +27,7 @@ export default function Contact() {
           <button className="btn-black"><a href={DIRECT_WA}>Contact</a></button>
         </div>
       </div>
-      <div>
+      <div className="hidden md:block">
         <Image src={Star} width={100} height={100} alt="star" />
         <Image src={Star} width={50} height={50} alt="star" />
       </div>
