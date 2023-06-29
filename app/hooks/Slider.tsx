@@ -1,11 +1,21 @@
 "use client";
-import { useState, PropsWithChildren } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
-export default function Slider({ slides }: PropsWithChildren) {
-  const [current, setCurrent] = useState(0);
+interface SliderProps<T> {
+  width?: T
+  height?: T
+  position?: T
+  justifyContent?: T
+  alignItems?: T
+  backgroundSize?: T
+  backgroundPosition?: T
+}
 
-  const slideStyle = {
+export default function Slider({ slides }: any) {
+  const [current, setCurrent] = useState<number>(0);
+
+  const slideStyle: SliderProps<string> = {
     width: "100%",
     height: "100%",
     position: "flex",
@@ -15,27 +25,11 @@ export default function Slider({ slides }: PropsWithChildren) {
     backgroundSize: "cover",
   };
 
-  const leftArrow = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    left: "32px",
-    fontSize: "42px",
-    color: "#111",
-    zIndex: "1",
-    cursor: "pointer",
-  };
+  type Arrow = {
+    transform: string;
+  }
 
-  const rightArrow = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    right: "32px",
-    fontSize: "42px",
-    color: "#111",
-    zIndex: "1",
-    cursor: "pointer",
-  };
+  const arrow: Arrow = { transform: "translate(0, -50%)" }
 
   const previousSlide = () => {
     setCurrent(current === 0 ? slides.length - 1 : current - 1);
@@ -47,15 +41,15 @@ export default function Slider({ slides }: PropsWithChildren) {
   return (
     <div className="relative w-full h-full">
       <button
-        className="w-10 h-10 flex justify-center items-center rounded-full bg-gray-500 bg-opacity-50"
-        style={leftArrow}
+        className="w-10 h-10 flex justify-center items-center rounded-full bg-gray-500 bg-opacity-500 absolute top-[50%] left-[32px] text-dark0 z-10 cursor-pointer"
+        style={arrow}
         onClick={previousSlide}
       >
         &lt;
       </button>
       <button
-        className="w-10 h-10 flex justify-center items-center rounded-full bg-gray-500 bg-opacity-50"
-        style={rightArrow}
+        className="w-10 h-10 flex justify-center items-center rounded-full bg-gray-500 bg-opacity-50 absolute top-[50%] right-[32px] text-dark0 z-10 cursor-pointer"
+        style={arrow}
         onClick={nextSlide}
       >
         &gt;

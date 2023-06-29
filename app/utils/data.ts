@@ -38,7 +38,7 @@ export const navbar: DataTypes<string>[] = [
   },
 ];
 
-export const showcase: string[] = [
+export const showcase: any[] = [
   {
     image: Main1,
     alt: "main image"
