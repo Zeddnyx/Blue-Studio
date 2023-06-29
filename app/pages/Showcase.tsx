@@ -17,7 +17,7 @@ export default function Showcase() {
     >
       <div className="flex justify-between">
         <div className="w-[496px]">
-          <h3>A Showcase of Our Illustration and Animation Masterpieces</h3>
+          <h3>A Showcase of Our Illustration and Webcomics Masterpieces</h3>
         </div>
         <div className="hidden md:block">
           <Image src={Start} height={100} width={100} alt="start" />

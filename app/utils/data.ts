@@ -15,19 +15,19 @@ interface DataTypes<T> {
 export const navbar: DataTypes<string>[] = [
   {
     title: "Home",
-    child: "Custome illustration",
+    child: "Custom illustration",
     link: "home"
   },
   {
     title: "Services",
-    child: "Custome illustration",
+    child: "Custom illustration",
     child2: "Comic Strips",
     child3: "Potrait Art",
     link: "service"
   },
   {
     title: "Portfolio",
-    child: "Custome illustration",
+    child: "Custom illustration",
     child2: "Comic Strips",
     link: "portofolio"
   },
