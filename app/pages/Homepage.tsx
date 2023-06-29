@@ -28,7 +28,7 @@ export default function Homepage() {
           imagination to life, immersing you in captivating worlds.
         </p>
         <button className="btn-homepage">
-          <a href="mailto:bluestudio.hq@gmail.com">Get Inquiries</a>
+          <a href="https://form.jotform.com/231741486199466">Get Inquiries</a>
         </button>
       </m.div>
       <m.div

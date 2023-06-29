@@ -41,18 +41,22 @@ export const navbar: DataTypes<string>[] = [
 export const showcase: any[] = [
   {
     image: Main1,
-    alt: "main image"
+    alt: "Elina",
+    margin: "mt-5"
   },
   {
     image: Main2,
-    alt: "main image"
+    alt: "Jane",
+    margin: "mb-5"
   },
   {
     image: Main3,
-    alt: "main image"
+    alt: "Eiden",
+    margin: "mt-5"
   },
   {
     image: Main4,
-    alt: "main image"
+    alt: "Akira",
+    margin: "mb-5"
   }
 ]

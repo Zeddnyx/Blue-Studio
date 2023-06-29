@@ -32,14 +32,18 @@ export default function Showcase() {
       >
         <div className="main-showcase">
           {showcase.map((item, id) => (
-            <div key={id}>
+            <div key={id} className={`group relative`}>
               <Image
-                className="card-hover"
+                className={`card-hover ${item.margin}`}
                 src={item.image}
                 width={400}
                 height={400}
                 alt={item.alt}
               />
+              <div
+                className={`absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-mainPurple opacity-0 group-hover:h-full group-hover:opacity-80 duration-500 ${item.margin}`}>
+                <h1 className="text-2xl text-white">{item.alt}</h1>
+              </div>
             </div>
           ))}
         </div>
