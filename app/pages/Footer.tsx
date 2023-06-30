@@ -14,7 +14,7 @@ export default function Footer() {
           </div>
           <p className="w-full text-bright0">
             Discover a world of artistic wonders at Blue Studio, where we
-            breathe life into illustrations and animations
+            breathe life into illustrations and webcomics
           </p>
         </div>
       </div>
